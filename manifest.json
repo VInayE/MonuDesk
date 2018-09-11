@@ -1,0 +1,13 @@
+{
+  "name": "Yatra Monuments",
+  "short_name": "Yatra Monuments",
+  "icons": [{
+      "src": "/public/manifest.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }],
+  "start_url": "/",
+  "background_color": "#2387F5",
+  "display": "standalone",
+  "theme_color": "#2387F5"
+}

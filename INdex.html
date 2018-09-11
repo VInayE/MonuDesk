@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script>
+            var app = angular.module('svgApp',[])
+            app.controller('svgController',function($scope){
+                $scope.productDetail = [
+                    {
+                        'productId': 001,
+                        'productDescrip': 'cool t shirt',
+                        'avaibleSize': ['L', 'XL'],
+                        'colors':['#FF0000','#FFA500','#FFFF00'],
+                        images: {
+                                '#FF0000': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                },
+                                '#FFA500': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                },
+                                '#FFFF00': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                }
+                        },
+                        'title': 'Nike Tshirt'
+                    },
+                    {
+                        'productId': 002,
+                        'productDescrip': 'cool shirt',
+                        'avaibleSize': ['XS', 'XL'],
+                        'colors':['#FF0000','#FFA500','#FFFF00'],
+                        images: {
+                                '#FF0000': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                },
+                                '#FFA500': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                },
+                                '#FFFF00': {
+                                    'front': '..... url',
+                                    'back': '..... url',
+                                    'inside': '..... url',
+                                    'outside': '..... url'
+                                }
+                        },
+                        'title': 'Puma shirt'
+                    }
+                ]
+                
+            })
+         
+        </script>    
+    </head>
+    <body ng-app="svgApp" ng-controller="svgController">
+        <ul>
+        <li>Front Side</li>
+        <li>Back Side</li>
+        <li>Inside Label</li>
+        <li>Outside Label</li>
+        </ul>
+        <img src="">
+        <ul class="colors">
+            <li ng-repet=""></li>
+        </ul>
+    </body>
+</html>
